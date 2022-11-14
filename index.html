@@ -1,418 +1,154 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="https://yic-l.github.io/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/Blog/img/favicon.png"><link rel="canonical" href="https://yic-l.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/Blog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/Blog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-11-14 19:03:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/Blog/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/Blog/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/Blog/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/Blog/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/Blog/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/Blog/">Home</a>
-        
-          <a class="main-nav-link" href="/Blog/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/Blog/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://yic-l.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-docker" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/Blog/2022/10/08/docker/" class="article-date">
-  <time class="dt-published" datetime="2022-10-08T03:03:23.000Z" itemprop="datePublished">2022-10-08</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/Blog/2022/10/08/docker/">docker</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="docker基本使用"><a href="#docker基本使用" class="headerlink" title="docker基本使用"></a>docker基本使用</h1><h2 id="将当前用户添加到docker用户组"><a href="#将当前用户添加到docker用户组" class="headerlink" title="将当前用户添加到docker用户组"></a>将当前用户添加到docker用户组</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo group docker   			<span class="comment"># 新建docker用户组</span></span><br><span class="line">sudo gpasswd -a <span class="variable">$UESR</span> docker	<span class="comment"># 将当前用户添加到docker用户组</span></span><br><span class="line">newgrp docker					<span class="comment"># 更新docker用户组</span></span><br><span class="line">docker ps						<span class="comment"># 验证docker命令是否可以使用</span></span><br></pre></td></tr></table></figure>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/Blog/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/Blog/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/Blog/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/Blog/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/Blog/2022/10/08/docker/" title="docker">docker</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-08T03:03:23.000Z" title="Created 2022-10-08 11:03:23">2022-10-08</time></span></div><div class="content">docker基本使用将当前用户添加到docker用户组1234sudo group docker   			# 新建docker用户组sudo gpasswd -a $UESR docker	# 将当前用户添加到docker用户组newgrp docker					# 更新docker用户组docker ps						# 验证docker命令是否可以使用
 
 
-<h2 id="docker容器使用"><a href="#docker容器使用" class="headerlink" title="docker容器使用"></a>docker容器使用</h2><h3 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h3><h4 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker run ubuntu:15.10 /bin/echo <span class="string">&quot;Hello world&quot;</span></span><br><span class="line">Hello world</span><br></pre></td></tr></table></figure>
+docker容器使用启动容器Hello World12yic@yic-virtual-machine:~$ docker run ubuntu:15.10 /bin/echo &quot;Hello world&quot;Hello world
 
-<blockquote>
-<p>参数说明：</p>
-<ul>
-<li><p><strong>ubuntu:15.10</strong> 指定使用的镜像，docker首先从本地主机上查找镜像是否存在，如果不存在，会从镜像仓库Docker Hub中下载公共镜像</p>
-</li>
-<li><p><strong>&#x2F;bin&#x2F;echo “Hello world”</strong> 在启动的容器中执行的命令</p>
-</li>
-</ul>
-</blockquote>
-<p>上面的命令可以解释为：Docker使用ubuntu15.10镜像创建一个容器，然后在容器中执行**&#x2F;bin&#x2F;echo “Hello world”**，最后输出结果</p>
-<h4 id="运行交互式的容器"><a href="#运行交互式的容器" class="headerlink" title="运行交互式的容器"></a>运行交互式的容器</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker run -i -t ubuntu:15.10 /bin/bash</span><br><span class="line">root@70ffb7414d61:/<span class="comment"># </span></span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>参数说明：</p>
-<ul>
-<li><strong>-t:</strong> 在新容器内指定一个伪终端或终端。</li>
-<li><strong>-i:</strong> 允许你对容器内的标准输入 (STDIN) 进行交互。</li>
-</ul>
-</blockquote>
-<p><code>root@70ffb7414d61:/# </code>说明现在可以利用bash终端与刚刚开启的容器进行交互，这时可以使用<code>cat /proc/version</code>和<code>ls</code>等命令来查看系统的版本信息和查看当前目录下的文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker run -i -t ubuntu:15.10 /bin/bash</span><br><span class="line">root@70ffb7414d61:/<span class="comment"># cat /proc/version</span></span><br><span class="line">Linux version 5.15.0-50-generic (buildd@lcy02-amd64-009) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils <span class="keyword">for</span> Ubuntu) 2.34) <span class="comment">#56~20.04.1-Ubuntu SMP Tue Sep 27 15:51:29 UTC 2022</span></span><br><span class="line">root@70ffb7414d61:/<span class="comment"># ls</span></span><br><span class="line">bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var</span><br><span class="line">root@70ffb7414d61:/<span class="comment">#</span></span><br></pre></td></tr></table></figure>
+参数说明：
 
-<p>可以使用<code>exit</code>或<code>Ctrl+D</code>退出容器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker run -i -t ubuntu:15.10 /bin/bash</span><br><span class="line">root@28c6d60a5063:/<span class="comment"># exit</span></span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line">yic@yic-virtual-machine:~$</span><br></pre></td></tr></table></figure>
+ubuntu:15.10 指定使用的镜像，docker首先从本地主机上查找镜像是否存在，如果不存在，会从镜像仓库Docker Hub中下载公共镜像
 
-<h4 id="启动容器（后台模式）"><a href="#启动容器（后台模式）" class="headerlink" title="启动容器（后台模式）"></a>启动容器（后台模式）</h4><p>使用<code>-d</code>参数创建一个以进程方式运行的容器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker run -d ubuntu:15.10 /bin/sh -c\</span><br><span class="line">&gt; <span class="string">&quot;while true;\</span></span><br><span class="line"><span class="string">&gt; do\</span></span><br><span class="line"><span class="string">&gt; echo hello world;\</span></span><br><span class="line"><span class="string">&gt; sleep 1;\</span></span><br><span class="line"><span class="string">&gt; done&quot;</span></span><br><span class="line">044c893a87e829d72b83ab378f20924fdb8d766fdae3871ce264f78ae68c166c		<span class="comment"># 容器ID</span></span><br><span class="line">yic@yic-virtual-machine:~$</span><br></pre></td></tr></table></figure>
-
-<p>这时我们并没有直接进入容器的终端中，取而代之的是输出了一串长字符串，这个字符串是容器ID，对于每个容器都是唯一的，我们可以通过容器ID来指定某一容器。刚刚启动的容器以后台模式运行，可以使用<code>docker ps</code>命令查看当前运行中的容器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker ps</span><br><span class="line">CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS     NAMES</span><br><span class="line">02baada641d4   ubuntu:15.10   <span class="string">&quot;/bin/sh -c &#x27;while t…&quot;</span>   7 minutes ago   Up 7 minutes        mystifying_edison</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>输出说明：</p>
-<p><strong>CONTAINER ID:</strong> 容器 ID。</p>
-<p><strong>IMAGE:</strong> 使用的镜像。</p>
-<p><strong>COMMAND:</strong> 启动容器时运行的命令。</p>
-<p><strong>CREATED:</strong> 容器的创建时间。</p>
-<p><strong>STATUS:</strong> 容器状态。</p>
-<p>状态有7种：</p>
-<ul>
-<li>created（已创建）</li>
-<li>restarting（重启中）</li>
-<li>running 或 Up（运行中）</li>
-<li>removing（迁移中）</li>
-<li>paused（暂停）</li>
-<li>exited（停止）</li>
-<li>dead（死亡）</li>
-</ul>
-<p><strong>PORTS:</strong> 容器的端口信息和使用的连接类型（tcp\udp）。</p>
-<p><strong>NAMES:</strong> 自动分配的容器名称。</p>
-</blockquote>
-<p>在主机中使用<code>docker logs &lt;CONTAINER ID/NAMES&gt;</code>查看容器内的标准输出</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker logs 02baada641d4</span><br><span class="line">hello world</span><br><span class="line">hello world</span><br><span class="line">hello world</span><br><span class="line">hello world</span><br><span class="line">hello world</span><br><span class="line">hello world</span><br><span class="line">hello world</span><br><span class="line">hello world</span><br><span class="line">hello world</span><br><span class="line">hello world</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<h4 id="停止容器"><a href="#停止容器" class="headerlink" title="停止容器"></a>停止容器</h4><p>使用<code>docker stop &lt;CONTAINER ID\NAMES&gt;</code>命令来停止容器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker stop 02baada641d4</span><br><span class="line">02baada641d4 </span><br></pre></td></tr></table></figure>
-
-<p>这时再使用<code>docker ps</code>查看发现刚才停止的容器已经不见了</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker ps</span><br><span class="line">CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES</span><br><span class="line">yic@yic-virtual-machine:~$</span><br></pre></td></tr></table></figure>
-
-<h4 id="获取镜像"><a href="#获取镜像" class="headerlink" title="获取镜像"></a>获取镜像</h4><p>如果本地没有ubuntu镜像，可以使用<code>docker pull</code>命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker pull ubuntu</span><br><span class="line">Using default tag: latest</span><br><span class="line">latest: Pulling from library/ubuntu</span><br><span class="line">Digest: sha256:35fb073f9e56eb84041b0745cb714eff0f7b225ea9e024f703cab56aaa5c7720</span><br><span class="line">Status: Image is up to <span class="built_in">date</span> <span class="keyword">for</span> ubuntu:latest</span><br><span class="line">docker.io/library/ubuntu:latest</span><br></pre></td></tr></table></figure>
-
-<h5 id="Error-response-from-daemon-Get-“https-registry-1-docker-io-v2-quot-dial-tcp-lookup-registry-1-docker-io-Temporary-failure-in-name-resolution报错"><a href="#Error-response-from-daemon-Get-“https-registry-1-docker-io-v2-quot-dial-tcp-lookup-registry-1-docker-io-Temporary-failure-in-name-resolution报错" class="headerlink" title="Error response from daemon: Get “https://registry-1.docker.io/v2/&quot;: dial tcp: lookup registry-1.docker.io: Temporary failure in name resolution报错"></a>Error response from daemon: Get “<a target="_blank" rel="noopener" href="https://registry-1.docker.io/v2/&quot;">https://registry-1.docker.io/v2/&quot;</a>: dial tcp: lookup registry-1.docker.io: Temporary failure in name resolution报错</h5><p>docker默认的下载源为国外源，可能出现链接不上的情况，换为国内源可解决</p>
-<p>编辑或新建配置文件 &#x2F;etc&#x2F;docker&#x2F;daemon.json，内容修改为</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;registry-mirrors&quot;</span>: [<span class="string">&quot;https://registry.docker-cn.com&quot;</span>,<span class="string">&quot;http://hub-mirror.c.163.com&quot;</span>],</span><br><span class="line">    <span class="string">&quot;live-restore&quot;</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>重新启动docker服务</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart docker</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>Docker国内源说明：</p>
-<ul>
-<li><p>Docker 官方中国区  <a target="_blank" rel="noopener" href="https://registry.docker-cn.com/">https://registry.docker-cn.com</a></p>
-</li>
-<li><p>网易                            <a target="_blank" rel="noopener" href="http://hub-mirror.c.163.com/">http://hub-mirror.c.163.com</a></p>
-</li>
-<li><p>中国科技大学            <a target="_blank" rel="noopener" href="https://docker.mirrors.ustc.edu.cn/">https://docker.mirrors.ustc.edu.cn</a></p>
-</li>
-<li><p>阿里云                       <a target="_blank" rel="noopener" href="https://pee6w651.mirror.aliyuncs.com/">https://pee6w651.mirror.aliyuncs.com</a></p>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>一通乱搞也没弄好，最后reboot一下就好了😐</p>
-</blockquote>
-<h4 id="启动已停止的容器"><a href="#启动已停止的容器" class="headerlink" title="启动已停止的容器"></a>启动已停止的容器</h4><p><code>docker ps -a</code>查看所有的docker容器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker ps -a</span><br><span class="line">CONTAINER ID   IMAGE          COMMAND                  CREATED       STATUS                     PORTS     NAMES</span><br><span class="line">044c893a87e8   ubuntu:15.10   <span class="string">&quot;/bin/sh &#x27;-cwhile tr…&quot;</span>   2 hours ago   Exited (2) 2 hours ago               friendly_wilson</span><br><span class="line">02baada641d4   ubuntu:15.10   <span class="string">&quot;/bin/sh -c &#x27;while t…&quot;</span>   2 hours ago   Exited (137) 2 hours ago             mystifying_edison</span><br><span class="line">ccc1b374a28c   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              2 hours ago   Exited (0) 2 hours ago               magical_leakey</span><br><span class="line">28c6d60a5063   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              2 hours ago   Exited (0) 2 hours ago               mystifying_antonelli</span><br><span class="line">70ffb7414d61   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              2 hours ago   Exited (0) 2 hours ago               hungry_varahamihira</span><br><span class="line">6ad0ad549bc7   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              3 hours ago   Exited (0) 3 hours ago               happy_pike</span><br><span class="line">1ed62376198f   ubuntu:15.10   <span class="string">&quot;/bin/echo &#x27;Hello wo…&quot;</span>   3 hours ago   Exited (0) 3 hours ago               funny_rubin</span><br><span class="line">3fd2f43d632e   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              3 hours ago   Exited (130) 3 hours ago             naughty_merkle</span><br><span class="line">8ff36846eab9   ubuntu:15.10   <span class="string">&quot;/bin/echo &#x27;Hello wo…&quot;</span>   3 hours ago   Exited (0) 3 hours ago               festive_liskov</span><br></pre></td></tr></table></figure>
-
-<p>这时可以使用<code>docker restart</code>重新启动已经关闭的容器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker ps</span><br><span class="line">CONTAINER ID   IMAGE          COMMAND       CREATED       STATUS         PORTS     NAMES</span><br><span class="line">ccc1b374a28c   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>   2 hours ago   Up 2 seconds             magical_leakey  </span><br></pre></td></tr></table></figure>
-
-<h3 id="进入容器"><a href="#进入容器" class="headerlink" title="进入容器"></a>进入容器</h3><p>使用<code>-d</code>参数创建容器的时候，并不会直接进入容器，会在后台运行，如果想要进入容器，可以使用<code>docker attach</code>或<code>docker exec</code>命令</p>
-<blockquote>
-<p><code>docker attach</code>与<code>docker exec</code>的区别：</p>
-<p><code>docker attach</code>在退出容器时会将容器停止，<code>docker exec</code>不会停止容器</p>
-</blockquote>
-<h4 id="docker-attach"><a href="#docker-attach" class="headerlink" title="docker attach"></a>docker attach</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker start magical_leakey</span><br><span class="line">magical_leakey</span><br><span class="line">yic@yic-virtual-machine:~$ docker attach magical_leakey </span><br><span class="line">root@ccc1b374a28c:/<span class="comment"># ls</span></span><br><span class="line">bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var</span><br><span class="line">root@ccc1b374a28c:/<span class="comment"># cat /proc/version</span></span><br><span class="line">Linux version 5.15.0-50-generic (buildd@lcy02-amd64-009) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils <span class="keyword">for</span> Ubuntu) 2.34) <span class="comment">#56~20.04.1-Ubuntu SMP Tue Sep 27 15:51:29 UTC 2022</span></span><br><span class="line">root@ccc1b374a28c:/<span class="comment"># exit</span></span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line">yic@yic-virtual-machine:~$ docker ps</span><br><span class="line">CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES</span><br><span class="line">yic@yic-virtual-machine:~$</span><br></pre></td></tr></table></figure>
-
-<h4 id="docker-exec"><a href="#docker-exec" class="headerlink" title="docker exec"></a>docker exec</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~$ docker start ccc1b374a28c</span><br><span class="line">ccc1b374a28c</span><br><span class="line">yic@yic-virtual-machine:~$ docker <span class="built_in">exec</span> -it ccc1b374a28c /bin/bash</span><br><span class="line">root@ccc1b374a28c:/<span class="comment"># ls</span></span><br><span class="line">bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var</span><br><span class="line">root@ccc1b374a28c:/<span class="comment"># cat /proc/version</span></span><br><span class="line">Linux version 5.15.0-50-generic (buildd@lcy02-amd64-009) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils <span class="keyword">for</span> Ubuntu) 2.34) <span class="comment">#56~20.04.1-Ubuntu SMP Tue Sep 27 15:51:29 UTC 2022</span></span><br><span class="line">root@ccc1b374a28c:/<span class="comment"># exit</span></span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line">yic@yic-virtual-machine:~$ docker ps</span><br><span class="line">CONTAINER ID   IMAGE          COMMAND       CREATED        STATUS         PORTS     NAMES</span><br><span class="line">ccc1b374a28c   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>   15 hours ago   Up 2 minutes             magical_leakey</span><br><span class="line">yic@yic-virtual-machine:~$</span><br></pre></td></tr></table></figure>
-
-<h3 id="导入和导出容器"><a href="#导入和导出容器" class="headerlink" title="导入和导出容器"></a>导入和导出容器</h3><h4 id="导出容器"><a href="#导出容器" class="headerlink" title="导出容器"></a>导出容器</h4><p>可以使用<code>docker export</code>命令，导出本地某个容器为快照</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker <span class="built_in">export</span> magical_leakey &gt; ubuntu.tar</span><br></pre></td></tr></table></figure>
-
-<p>将<code>magical_leakey</code>快照导出为<code>ubuntu.tar</code>本地文件</p>
-<h4 id="导入容器快照"><a href="#导入容器快照" class="headerlink" title="导入容器快照"></a>导入容器快照</h4><p>可以使用 <code>docker import</code> 从容器快照文件中再导入为镜像，以下实例将快照文件 <code>ubuntu.tar</code> 导入到镜像 <code>test/ubuntu:v1</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$  <span class="built_in">cat</span> ubuntu.tar | docker import - <span class="built_in">test</span>/ubuntu:v1</span><br><span class="line">sha256:b5ab3a33ec60481702eec2a8588c1f0daf14996e9c7f57f413f8891f5db02963</span><br></pre></td></tr></table></figure>
-
-<p>也可以指定某个url或者目录来导入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker import http://example.com/exampleimage.tgz example/imagerepo</span><br></pre></td></tr></table></figure>
-
-<h3 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h3><p>使用<code>docker rm</code>命令删除容器（删除后的容器不能使用<code>docker ps -a</code>找到），删除容器前需要先停止容器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker <span class="built_in">rm</span> ccc1b374a28c</span><br><span class="line">ccc1b374a28c</span><br></pre></td></tr></table></figure>
-
-<p>使用<code>docker container prune</code>可以一键清理所有处于停止状态下的容器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker ps -a</span><br><span class="line">CONTAINER ID   IMAGE          COMMAND                  CREATED        STATUS                      PORTS     NAMES</span><br><span class="line">044c893a87e8   ubuntu:15.10   <span class="string">&quot;/bin/sh &#x27;-cwhile tr…&quot;</span>   39 hours ago   Exited (2) 37 hours ago               friendly_wilson</span><br><span class="line">02baada641d4   ubuntu:15.10   <span class="string">&quot;/bin/sh -c &#x27;while t…&quot;</span>   39 hours ago   Exited (137) 38 hours ago             mystifying_edison</span><br><span class="line">ccc1b374a28c   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              39 hours ago   Up 6 minutes                          magical_leakey</span><br><span class="line">28c6d60a5063   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              39 hours ago   Exited (0) 39 hours ago               mystifying_antonelli</span><br><span class="line">70ffb7414d61   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              39 hours ago   Exited (0) 39 hours ago               hungry_varahamihira</span><br><span class="line">6ad0ad549bc7   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              39 hours ago   Exited (0) 39 hours ago               happy_pike</span><br><span class="line">1ed62376198f   ubuntu:15.10   <span class="string">&quot;/bin/echo &#x27;Hello wo…&quot;</span>   39 hours ago   Exited (0) 39 hours ago               funny_rubin</span><br><span class="line">3fd2f43d632e   ubuntu:15.10   <span class="string">&quot;/bin/bash&quot;</span>              39 hours ago   Exited (130) 39 hours ago             naughty_merkle</span><br><span class="line">8ff36846eab9   ubuntu:15.10   <span class="string">&quot;/bin/echo &#x27;Hello wo…&quot;</span>   39 hours ago   Exited (0) 39 hours ago               festive_liskov</span><br><span class="line">yic@yic-virtual-machine:~/Desktop$ docker container prune</span><br><span class="line">WARNING! This will remove all stopped containers.</span><br><span class="line">Are you sure you want to <span class="built_in">continue</span>? [y/N] y</span><br><span class="line">Deleted Containers:</span><br><span class="line">044c893a87e829d72b83ab378f20924fdb8d766fdae3871ce264f78ae68c166c</span><br><span class="line">02baada641d4a5e1a64ba29c6ad524a627f1ac0465e224196dd6e2039cfb5e4c</span><br><span class="line">28c6d60a5063f5129e20f4cabc71de4ac66c4534e3cf0f277728b2f7af753fc2</span><br><span class="line">70ffb7414d61cc5fba2e2b4c77f31f83b3e5788539d3089c0c2f792057c29d1a</span><br><span class="line">6ad0ad549bc7be499da98a39b28cdde49e6d78902e5ac257a5096bfc08a70432</span><br><span class="line">1ed62376198f72532da177c1cb70496e32bec0fa21703a625968022792172fa6</span><br><span class="line">3fd2f43d632eb171aebf3ef4b7fc843da701a8b8ae6a0c2790c2ef20774eacad</span><br><span class="line">8ff36846eab94cf3762eaa39cf7d7df6b694322ad2424585afac5de478fbf954</span><br></pre></td></tr></table></figure>
-
-<h3 id="运行一个web应用"><a href="#运行一个web应用" class="headerlink" title="运行一个web应用"></a>运行一个web应用</h3><p>前面运行的容器的实际用处不大，下面我们尝试使用docker构建一个web应用程序</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker run -d --name=web -p 80:80 nginx:latest</span><br><span class="line">24cad7c3464f46b9d257134996858fc6c41cbf01496af8fe492bc06e261faee0</span><br></pre></td></tr></table></figure>
-
-<p>这条命令表示以<code>nginx:latest</code>启动一个名字为<code>web</code>的<code>docker</code>容器，从docker的80端口映射到宿主机的80端口</p>
-<p>在<code>docker</code>宿主机的浏览器中尝试访问<code>localhost:80</code>，发现出现了Nginx的欢迎界面，说明web应用部署成功</p>
-<p><img src="C:\Users\Yic\AppData\Roaming\Typora\typora-user-images\image-20221007174408503.png" alt="image-20221007174408503"></p>
-<blockquote>
-<p><code>-P</code>将容器暴露的所有端口都随机映射到宿主机上</p>
-<p>在启动web应用的时候，可以使用<code>-p</code>指令更改端口映射，例如这里将Nginx服务映射到宿主机的<code>4000</code>端口</p>
-<p>格式：<code>宿主机port:容器端口 </code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker run -d --name=web -p 4000:80 nginx:latest</span><br><span class="line">90a089bf5dc03bae6239ecc14093be954bd58c92c935c155caa592ab258cb3ed</span><br></pre></td></tr></table></figure>
-
-<p>这时访问宿主机的80端口无法访问到Nginx服务，访问4000端口则可以：</p>
-<p><img src="C:\Users\Yic\AppData\Roaming\Typora\typora-user-images\image-20221007175432613.png" alt="image-20221007175432613"></p>
-</blockquote>
-<h4 id="docker-logs"><a href="#docker-logs" class="headerlink" title="docker logs"></a>docker logs</h4><p>使用<code>docker logs</code>命令查看容器内部的输出：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker logs web </span><br><span class="line">/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration</span><br><span class="line">/docker-entrypoint.sh: Looking <span class="keyword">for</span> shell scripts <span class="keyword">in</span> /docker-entrypoint.d/</span><br><span class="line">/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh</span><br><span class="line">10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf</span><br><span class="line">10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 <span class="keyword">in</span> /etc/nginx/conf.d/default.conf</span><br><span class="line">/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh</span><br><span class="line">/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh</span><br><span class="line">/docker-entrypoint.sh: Configuration complete; ready <span class="keyword">for</span> start up</span><br><span class="line">2022/10/07 09:37:16 [notice] 1<span class="comment">#1: using the &quot;epoll&quot; event method</span></span><br><span class="line">2022/10/07 09:37:16 [notice] 1<span class="comment">#1: nginx/1.23.1</span></span><br><span class="line">2022/10/07 09:37:16 [notice] 1<span class="comment">#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) </span></span><br><span class="line">2022/10/07 09:37:16 [notice] 1<span class="comment">#1: OS: Linux 5.15.0-50-generic</span></span><br><span class="line">2022/10/07 09:37:16 [notice] 1<span class="comment">#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576</span></span><br><span class="line">2022/10/07 09:37:16 [notice] 1<span class="comment">#1: start worker processes</span></span><br><span class="line">2022/10/07 09:37:16 [notice] 1<span class="comment">#1: start worker process 31</span></span><br><span class="line">2022/10/07 09:37:16 [notice] 1<span class="comment">#1: start worker process 32</span></span><br><span class="line">172.17.0.1 - - [07/Oct/2022:09:43:15 +0000] <span class="string">&quot;GET / HTTP/1.1&quot;</span> 200 615 <span class="string">&quot;-&quot;</span> <span class="string">&quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:105.0) Gecko/20100101 Firefox/105.0&quot;</span> <span class="string">&quot;-&quot;</span></span><br><span class="line">172.17.0.1 - - [07/Oct/2022:09:43:15 +0000] <span class="string">&quot;GET /favicon.ico HTTP/1.1&quot;</span> 404 153 <span class="string">&quot;http://localhost/&quot;</span> <span class="string">&quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:105.0) Gecko/20100101 Firefox/105.0&quot;</span> <span class="string">&quot;-&quot;</span></span><br><span class="line">2022/10/07 09:43:15 [error] 31<span class="comment">#31: *1 open() &quot;/usr/share/nginx/html/favicon.ico&quot; failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: &quot;GET /favicon.ico HTTP/1.1&quot;, host: &quot;localhost&quot;, referrer: &quot;http://localhost/&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="docker-port"><a href="#docker-port" class="headerlink" title="docker port"></a>docker port</h4><p>使用<code>docker port</code>命令可以查看指定（ID或名字）的容器的某个确定端口映射到宿主机上的端口号</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker port web</span><br><span class="line">80/tcp -&gt; 0.0.0.0:80</span><br><span class="line">80/tcp -&gt; :::80</span><br></pre></td></tr></table></figure>
-
-<h4 id="检查web应用"><a href="#检查web应用" class="headerlink" title="检查web应用"></a>检查web应用</h4><p>使用 <code>docker inspect</code> 来查看 <code>Docker</code> 的底层信息。它会返回一个 JSON 文件记录着 <code>Docker</code> 容器的配置和状态信息。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker inspect &lt;CONTAINER ID\NAME&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="docker镜像使用"><a href="#docker镜像使用" class="headerlink" title="docker镜像使用"></a>docker镜像使用</h2><h3 id="列出本地镜像列表"><a href="#列出本地镜像列表" class="headerlink" title="列出本地镜像列表"></a>列出本地镜像列表</h3><p>使用<code>docker images</code>命令可以列出本地的镜像列表</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker images</span><br><span class="line">REPOSITORY        TAG       IMAGE ID       CREATED        SIZE</span><br><span class="line"><span class="built_in">test</span>/ubuntu       v1        b5ab3a33ec60   5 hours ago    119MB</span><br><span class="line">&lt;none&gt;            &lt;none&gt;    7de4cf624f91   5 hours ago    0B</span><br><span class="line">nginx             latest    51086ed63d8c   45 hours ago   142MB</span><br><span class="line">ubuntu            latest    216c552ea5ba   2 days ago     77.8MB</span><br><span class="line">ubuntu            15.10     9b9cb95443b5   6 years ago    137MB</span><br><span class="line">training/webapp   latest    6fae60ef3446   7 years ago    349MB</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>输出说明:</p>
-<ul>
-<li><strong>REPOSITORY：</strong>表示镜像的仓库源</li>
-<li><strong>TAG：</strong>镜像的标签</li>
-</ul>
-<blockquote>
-<p>同一个仓库源中可以有多个不同的标签，用来代表不同的版本，例如同一个仓库源ubuntu，有15.10、lastest两个版本，我们使用REPOSITORY:TAG来定义一个镜像</p>
-</blockquote>
-<ul>
-<li><strong>IMAGE ID：</strong>镜像ID</li>
-<li><strong>CREATED：</strong>镜像创建时间</li>
-<li><strong>SIZE：</strong>镜像大小</li>
-</ul>
-</blockquote>
-<h3 id="查找镜像"><a href="#查找镜像" class="headerlink" title="查找镜像"></a>查找镜像</h3><p>我们可以直接在<code>Docker Hub</code>网站上查找镜像，网址为：<strong><a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com/</a></strong></p>
-<p>也可以使用<code>docker search</code>命令搜索所需要的镜像，例如我现在需要使用httpd镜像来搭建web服务，可以使用下面的命令来搜索</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker search httpd</span><br><span class="line">NAME                                 DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED</span><br><span class="line">httpd                                The Apache HTTP Server Project                  4176      [OK]       </span><br><span class="line">centos/httpd-24-centos7              Platform <span class="keyword">for</span> running Apache httpd 2.4 or bui…   44                   </span><br><span class="line">centos/httpd                                                                         35                   [OK]</span><br><span class="line">clearlinux/httpd                     httpd HyperText Transfer Protocol (HTTP) ser…   2                    </span><br><span class="line">solsson/httpd-openidc                mod_auth_openidc on official httpd image, ve…   2                    [OK]</span><br><span class="line">hypoport/httpd-cgi                   httpd-cgi                                       2                    [OK]</span><br><span class="line">dockerpinata/httpd                                                                   1                    </span><br><span class="line">inanimate/httpd-ssl                  A play container with httpd, ssl enabled, an…   1                    [OK]</span><br><span class="line">publici/httpd                        httpd:latest                                    1                    [OK]</span><br><span class="line">centos/httpd-24-centos8                                                              1                    </span><br><span class="line">dariko/httpd-rproxy-ldap             Apache httpd reverse proxy with LDAP authent…   1                    [OK]</span><br><span class="line">manageiq/httpd                       Container with httpd, built on CentOS <span class="keyword">for</span> Ma…   1                    [OK]</span><br><span class="line">nnasaki/httpd-ssi                    SSI enabled Apache 2.4 on Alpine Linux          1                    </span><br><span class="line">lead4good/httpd-fpm                  httpd server <span class="built_in">which</span> connects via fcgi proxy h…   1                    [OK]</span><br><span class="line">patrickha/httpd-err                                                                  0                    </span><br><span class="line">httpdocker/kubia                                                                     0                    </span><br><span class="line">amd64/httpd                          The Apache HTTP Server Project                  0                    </span><br><span class="line">e2eteam/httpd                                                                        0                    </span><br><span class="line">manageiq/httpd_configmap_generator   Httpd Configmap Generator                       0                    [OK]</span><br><span class="line">paketobuildpacks/httpd                                                               0                    </span><br><span class="line">httpdss/archerysec                   ArcherySec repository                           0                    [OK]</span><br><span class="line">sandeep1988/httpd-new                httpd-new                                       0                    </span><br><span class="line">19022021/httpd-connection_test       This httpd image will <span class="built_in">test</span> the connectivity …   0                    </span><br><span class="line">ppc64le/httpd                        The Apache HTTP Server Project                  0                    </span><br><span class="line">manasip/httpd                                                                        0 </span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>输出说明：</p>
-<ul>
-<li><p><strong>NAME:</strong> 镜像仓库源的名称</p>
-</li>
-<li><p><strong>DESCRIPTION:</strong> 镜像的描述</p>
-</li>
-<li><p><strong>OFFICIAL:</strong> 是否 docker 官方发布</p>
-</li>
-<li><p><strong>stars:</strong> 类似 Github 里面的 star，表示点赞、喜欢的意思。</p>
-</li>
-<li><p><strong>AUTOMATED:</strong> 自动构建。</p>
-</li>
-</ul>
-</blockquote>
-<h3 id="获取一个新的镜像"><a href="#获取一个新的镜像" class="headerlink" title="获取一个新的镜像"></a>获取一个新的镜像</h3><p>当我们使用一个本地不存在的镜像时，docker会自动下载所需要的镜像，如果我们想预先下载好镜像，可以使用<code>docker pull</code>命令来下载</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker pull httpd</span><br><span class="line">Using default tag: latest</span><br><span class="line">latest: Pulling from library/httpd</span><br><span class="line">latest: Pulling from library/httpd</span><br><span class="line">bd159e379b3b: Already exists </span><br><span class="line">36d838c2f6d6: Pull complete </span><br><span class="line">b55eda22bb18: Pull complete </span><br><span class="line">f6e6bfa28393: Pull complete </span><br><span class="line">a1b49b7ecb8a: Pull complete </span><br><span class="line">Digest: sha256:4400fb49c9d7d218d3c8109ef721e0ec1f3897028a3004b098af587d565f4ae5</span><br><span class="line">Status: Downloaded newer image <span class="keyword">for</span> httpd:latest</span><br><span class="line">docker.io/library/httpd:latest</span><br></pre></td></tr></table></figure>
-
-<p>把镜像拉取下来后，就可以直接使用该镜像而无需从远端下载   </p>
-<h3 id="删除镜像"><a href="#删除镜像" class="headerlink" title="删除镜像"></a>删除镜像</h3><blockquote>
-<p>删除一个镜像时需要先使用<code>docker rm</code>命令删除所有依赖于这个镜像的容器</p>
-</blockquote>
-<p>删除镜像使用<code>docker rmi</code>命令，例如删除<code>ubuntu:15.10</code>镜像</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker rmi ubuntu:15.10 </span><br><span class="line">Untagged: ubuntu:15.10</span><br><span class="line">Untagged: ubuntu@sha256:02521a2d079595241c6793b2044f02eecf294034f31d6e235ac4b2b54ffc41f3</span><br><span class="line">Deleted: sha256:9b9cb95443b5f846cd3c8cfa3f64e63b6ba68de2618a08875a119c81a8f96698</span><br><span class="line">Deleted: sha256:b616585738eaf78ff7d86c7526caf7c91a35bc4028ef63204e5bfee82f7494b5</span><br><span class="line">Deleted: sha256:dee1316f97acc7e1a5088b02fbc2b3078e0bfa038dd904b8072e2de5656e7bb8</span><br><span class="line">Deleted: sha256:e7d9ae1a69c53c9fefa1aef34348be5a5dbf2fe79e7dd647b3d4f4e927587ebc</span><br><span class="line">Deleted: sha256:f121afdbbd5dd49d4a88c402b1a1a4dca39c9ae75ed7f80a29ffd9739fc680a7</span><br></pre></td></tr></table></figure>
-
-<h3 id="创建镜像"><a href="#创建镜像" class="headerlink" title="创建镜像"></a>创建镜像</h3><p>当docker镜像仓库中的镜像已经不能满足需求时，我们可以利用以下两种方式自己对镜像进行更改：</p>
-<ol>
-<li>从已经创建的容器中更新镜像，并且提交这个镜像</li>
-<li>使用Dockerfile新建一个镜像</li>
-</ol>
-<h4 id="更新镜像"><a href="#更新镜像" class="headerlink" title="更新镜像"></a>更新镜像</h4><p>更新镜像前，需要使用镜像先创建一个容器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker run -t -i ubuntu:15.10 /bin/bash</span><br><span class="line">root@9316924dee26:/<span class="comment">#</span></span><br></pre></td></tr></table></figure>
-
-<p>在容器中使用<code>apt-get upgrade</code>命令进行更新，之后使用<code>exit</code>退出，记录下这个容器的id，使用<code>docker commit</code>命令提交更改后的容器副本</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker commit -m=<span class="string">&quot;has update&quot;</span> -a=<span class="string">&quot;runoob&quot;</span> 9316924dee26 runoob/ubuntu:v2</span><br><span class="line">sha256:c4029ac33c3155868c0bcf582d9a96fde46ebeded5eeb6819787737ddf443356</span><br><span class="line">yic@yic-virtual-machine:~/Desktop$ docker images</span><br><span class="line">REPOSITORY        TAG       IMAGE ID       CREATED         SIZE</span><br><span class="line">runoob/ubuntu     v2        c4029ac33c31   9 seconds ago   137MB</span><br><span class="line"><span class="built_in">test</span>/ubuntu       v1        b5ab3a33ec60   7 hours ago     119MB</span><br><span class="line">&lt;none&gt;            &lt;none&gt;    7de4cf624f91   7 hours ago     0B</span><br><span class="line">nginx             latest    51086ed63d8c   2 days ago      142MB</span><br><span class="line">httpd             latest    d16a51d08814   2 days ago      145MB</span><br><span class="line">ubuntu            latest    216c552ea5ba   2 days ago      77.8MB</span><br><span class="line">ubuntu            15.10     9b9cb95443b5   6 years ago     137MB</span><br><span class="line">training/webapp   latest    6fae60ef3446   7 years ago     349MB</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>参数说明：</p>
-<ul>
-<li><strong>-m:</strong> 提交的描述信息</li>
-<li><strong>-a:</strong> 指定镜像作者</li>
-<li><strong>9316924dee26：</strong>容器 ID</li>
-<li><strong>runoob&#x2F;ubuntu:v2:</strong> 指定要创建的目标镜像名</li>
-</ul>
-</blockquote>
-<p>可以使用刚刚创建的镜像新建一个容器：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker run -t -i runoob/ubuntu:v2 /bin/bash</span><br><span class="line">root@57c4ff370c8d:/<span class="comment">#</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="构建镜像"><a href="#构建镜像" class="headerlink" title="构建镜像"></a>构建镜像</h4><p>使用<code>docker build</code>命令，可以从零开始构建一个新的镜像，为此，我们需要先创建一个Dockerfile文件，用来编写构建镜像的规则</p>
-<blockquote>
-<p>此处省略一万字😑</p>
-</blockquote>
-<h3 id="为镜像设置标签"><a href="#为镜像设置标签" class="headerlink" title="为镜像设置标签"></a>为镜像设置标签</h3><p>使用<code>docker tag</code>命令，可以为镜像添加一个新的标签</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">yic@yic-virtual-machine:~/Desktop$ docker images</span><br><span class="line">REPOSITORY   TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">&lt;none&gt;       &lt;none&gt;    7de4cf624f91   7 hours ago   0B</span><br><span class="line">nginx        latest    51086ed63d8c   2 days ago    142MB</span><br><span class="line">httpd        latest    d16a51d08814   2 days ago    145MB</span><br><span class="line">ubuntu       latest    216c552ea5ba   2 days ago    77.8MB</span><br><span class="line">ubuntu       15.10     9b9cb95443b5   6 years ago   137MB</span><br><span class="line">yic@yic-virtual-machine:~/Desktop$ docker tag 51086ed63d8c nginx:dev</span><br><span class="line">yic@yic-virtual-machine:~/Desktop$ docker images</span><br><span class="line">REPOSITORY   TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">&lt;none&gt;       &lt;none&gt;    7de4cf624f91   7 hours ago   0B</span><br><span class="line">nginx        dev       51086ed63d8c   2 days ago    142MB</span><br><span class="line">nginx        latest    51086ed63d8c   2 days ago    142MB</span><br><span class="line">httpd        latest    d16a51d08814   2 days ago    145MB</span><br><span class="line">ubuntu       latest    216c552ea5ba   2 days ago    77.8MB</span><br><span class="line">ubuntu       15.10     9b9cb95443b5   6 years ago   137MB</span><br></pre></td></tr></table></figure>
-
-<p>可以看到ID为<code>51086ed63d8c</code>的镜像多了一个名称为<code>dev</code>的标签</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yic-l.github.io/2022/10/08/docker/" data-id="cl8zcd4nf0000xguu0sg9500b" data-title="docker" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+&#x2F;bin&#x2F;echo “Hello world” 在启动的容器中执行的命令
 
 
 
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2022/10/">October 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/Blog/2022/10/08/docker/">docker</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/Blog/" class="mobile-nav-link">Home</a>
-  
-    <a href="/Blog/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/Blog/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/Blog/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/Blog/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+上面的命令可以解释为：Docker使用ubuntu15.10镜像创建一个容器，然后在容器中执行**&#x2F;bin&#x ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/Blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/Blog/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/Blog/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/Blog/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/Blog/2022/10/08/docker/" title="docker">docker</a><time datetime="2022-10-08T03:03:23.000Z" title="Created 2022-10-08 11:03:23">2022-10-08</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/Blog/archives/2022/10/"><span class="card-archive-list-date">October 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-11-14T11:03:37.267Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/Blog/js/utils.js"></script><script src="/Blog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
